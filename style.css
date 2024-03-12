@@ -1,0 +1,267 @@
+body{
+    background-color: #0b0918;
+
+}
+@font-face {
+    font-family: Fungal1;
+    src: url("webfonts/Fungal-Grow1000Thickness1000.woff");
+}
+
+@font-face {
+    font-family: Fungal2;
+    src: url("webfonts/Fungal-Grow400Thickness500.woff2");
+}
+
+a{
+    font-family: Fungal1;
+    color: #262147;
+    position: absolute;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+
+    transition: 15ms ease-in-out;
+}
+
+a:hover{
+    font-family: Fungal2;
+    color: #262147;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-decoration: underline;
+    
+}
+
+
+.black-hole{
+    position: fixed;
+    background: black;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: -3;
+
+    transition: 60s;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.black-hole:hover{
+    width: 1920px;
+    height: 1000px;
+    border-radius: 0%;
+}
+
+.gif1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    scale: 0.3;
+    /* z-index: 5; */
+    /* transition: all 60s; */
+
+}
+.gif2{
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    scale: 0.3;
+    /* z-index: 5; */
+    /* transition: all 60s; */
+    
+}
+
+.gif3{
+    position: absolute;
+    top: 600px;
+    left: 1200px;
+    scale: 0.3;
+    /* z-index: 5; */
+    /* transition: all 60s; */
+    
+}
+
+.gif4{
+    position: absolute;
+    top: -50px;
+    left: 500px;
+    scale: 0.3;
+    /* z-index: 5; */
+    /* transition: all 60s; */
+    
+}
+
+.gif5{
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    scale: 0.3;
+    /* z-index: 5; */
+    /* transition: all 60s; */
+    
+}
+
+.info-button{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    font-size:30px;
+    color:white;
+    border:1px solid white;
+    padding:20px;
+    border-radius:100px;
+    cursor:pointer;
+    z-index: 4;
+}
+
+.info-button:hover{
+    color:black;
+    background:white;
+    z-index: 4;
+}
+
+.info-window{
+    width:500px;
+    height:600px;
+    background:lightgray;
+    padding:20px;
+    font-size:16px;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: 4;
+
+    font-family: monospace;
+}
+
+.hidden {
+    display:none;
+}
+
+/* .title{
+    font-family: monospace;
+    color: white;
+    z-index: -1;
+    opacity: 1;
+    top: 500px;
+    left: 1000px;
+    position: relative;
+    transition: opacity 6s;
+} */
+
+/* .title:hover{
+    opacity: 0;
+}
+
+.title2{
+    font-family: monospace;
+    color: white;
+    z-index: -1;
+    opacity: 1;
+    top: 500px;
+    left: 500px;
+    position: absolute;
+    display: inline-block;
+    transition: opacity 3s;
+}
+
+.title2:hover{
+    opacity: 0;
+
+} */
+
+/* .specks {
+    position: fixed;
+    transform: translate(-10%, -20%);
+    margin: 0;
+    padding: 0;
+    z-index: auto;
+
+} */
+
+#sketch{
+    position: fixed;
+     left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+
+/* all elements that you want to move to the center should have the class '.bits' and then an individual class like .zuby1, .zuby2, .zuby3 etc  */
+/* you can use the individual class to set the starting position, and different moving speeds using the transition speed  */
+
+
+
+.lyndon {
+    position:absolute;
+    top:0;
+    left:400px;
+    transition: all 40s;
+}
+
+.sanction {
+    position:absolute;
+    top:730px;
+    left:400px;
+    transition: all 40s;
+}
+
+.denver {
+    position:absolute;
+    top:500px;
+    left:100px;
+    transition: all 90s;
+}
+
+.the-sun{
+    position:absolute;
+    top:0;
+    left: 1000px;
+    transition: all 70s;
+}
+
+.helen-zuman{
+    position:absolute;
+    top:100px;
+    left:1400px;
+    transition: all 40s;
+}
+
+.nbc{
+    position:absolute;
+    top:600px;
+    left:1400px;
+    transition: all 30s;
+}
+
+.fox-news{
+    position:absolute;
+    top:730px;
+    left:1000px;
+    transition: all 60s;
+}
+
+.roman{
+    position:absolute;
+    top:100px;
+    left:100px;
+    transition: all 10s;
+}
+
+/* this class gets added in javascript to the elements so they start moving to the center. You most likely won't have to touch this */
+
+.center {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
